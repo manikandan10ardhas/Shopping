@@ -1,0 +1,111 @@
+.card-header
+{
+  background-color: #006DDE;
+}
+.heading
+{
+  color: white;
+  font-weight:bold;
+}
+.whitetext
+{
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #006DDE;
+  color: white;
+  font-size: 17px;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.col-md-12
+{
+  padding: 0px !important;
+}
+
+.searchform
+{
+  margin-top: 10px;
+}
+.aligncenter
+{
+  text-align:center;
+}
+
+.producthead
+{
+  padding:1px;
+}
+
+.productimage
+{
+  margin-top:10px;
+}
+.imageproduct
+{
+  width:138px;
+  height:182px;
+}
+.strong
+{
+  font-weight:bold;
+}
+.btn-primary
+{
+  background-color:#006DDE;
+  margin-top:10px;
+}
+
+.menprouduct_img
+{
+  width:138px;
+  height:150px;
+}
+.footer
+{
+  background-color: #006DDE;
+}
+
+.row
+{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.footerhead
+{
+  font-size: 20px;
+}
+.buy_image
+{
+  width: 250px;
+}
+.floatright
+{
+  float: right;
+}

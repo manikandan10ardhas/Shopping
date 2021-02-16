@@ -1,0 +1,58 @@
+<% include header %>
+<div class="container-fluid">
+    <div class="col-md-12 aligncenter card">
+        <h3>Place Your Order</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Product Details</h4>
+                <img src="../images/<%= image_name %>" class="buy_image">
+                <p>
+                    <%= product_name %>
+                </p>
+                <p>
+                    Price <%= price %> R.s
+                </p>
+            </div>
+            <div class="col-md-8 floatright">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="col-md-8 offset-md-6">
+                            <form action="/confirmOrder" method="POST" name="confirmorder">
+                                <input type="hidden" name="price" value="<%= price %>">
+                                <input type="hidden" name="product_id" value="<%= product_id %>">
+                                <input type="hidden" name="catefory" value="<%= catefory %>">
+                                <div class="md-form">
+                                    <label>Name</label>
+                                    <input type="text" name="name" class="form-control">
+                                </div>
+                                <div class="md-form">
+                                    <label>E-Mail ID</label>
+                                    <input type="text" name="emailid" class="form-control">
+                                </div>
+                                <div class="md-form">
+                                    <label>Mobile</label>
+                                    <input type="text" name="mobile" class="form-control">
+                                </div>
+                                <div class="md-form">
+                                    <label>Address</label>
+                                    <textarea name="address" class="md-textarea form-control"></textarea>
+                                </div>
+                                <div class="md-form">
+                                    <label>Quantity</label>
+                                    <input type="text" name="Quantity" class="form-control">
+                                </div>
+                                <div class="md-form">
+                                    
+                                    <input type="submit" name="submit" class="btn btn-outline-primary btn-rounded btn-block my-4 waves-effect z-depth-0">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<% include footer %>
